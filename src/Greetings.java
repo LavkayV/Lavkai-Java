@@ -16,7 +16,7 @@ public class Greetings {
             System.out.println("What is your name?");
             scanner.nextLine(); // Clearing the Input Buffer After the scanner.nextInt(). Without it, it skips input for name variable
             String name = scanner.nextLine();
-            if (name.toLowerCase().equals("john")) {  // Using method equals, cause if I try to compare input with "==" it will starts compare their address in memory
+            if (name.equalsIgnoreCase("john")) {  // Using method equals, cause if I try to compare input with "==" it will starts compare their address in memory
                 System.out.println("Hello, John");
             } else {
                 System.out.println("There is no such name");
